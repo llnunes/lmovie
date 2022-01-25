@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #4D41C0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html, body {
+    background-color: #E8E8E8;
+}
+

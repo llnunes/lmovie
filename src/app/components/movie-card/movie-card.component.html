@@ -1,0 +1,12 @@
+<div>
+    <img class="dsmovie-movie-card-image" src={{movie.image}} alt={{movie.title}} />
+    <div class="dsmovie-card-bottom-container">
+        <h3>{{movie.title}}</h3>
+        <app-movie-score [count]="movie.count" [score]="movie.score" ></app-movie-score>       
+        <div class="btn btn-primary dsmovie-btn">
+            <a routerLink="/form/1">
+                Avaliar
+              </a>            
+        </div>             
+    </div>
+</div>

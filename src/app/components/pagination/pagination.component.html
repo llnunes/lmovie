@@ -1,0 +1,12 @@
+<div class="dsmovie-pagination-container">
+    <div class="dsmovie-pagination-box">
+        <button class="dsmovie-pagination-button" [disabled]="page.first" (click)="onChange(page.number - 1)">
+            <svg-icon src="./assets/img/arrow.svg" ></svg-icon>
+        </button>
+        <p>{{page.number+1}} de {{page.totalPages}}</p>
+                
+        <button class="dsmovie-pagination-button" [disabled]="page.last" (click)="onChange(page.number + 1)">
+            <svg-icon src="./assets/img/arrow.svg" class="dsmovie-flip-horizontal" ></svg-icon>
+        </button>
+    </div>
+</div>

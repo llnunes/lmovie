@@ -1,0 +1,9 @@
+<app-pagination [page]="page" (pageNumber)="atualizarPageNumber($event)"></app-pagination>
+
+<div class="container">
+    <div class="row" >
+        <div *ngFor="let item of page.content" class="col-sm-6 col-lg-4 col-xl-3 mb-3" >
+            <app-movie-card [movie]="item"></app-movie-card>
+        </div>        
+    </div>
+</div>

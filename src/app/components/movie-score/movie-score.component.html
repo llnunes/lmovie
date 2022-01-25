@@ -1,0 +1,5 @@
+<div class = "dsmovie-score-container" >
+    <p class="dsmovie-score-value">{{score > 0 ? score.toFixed(1) : '-'}}</p>
+    <app-movie-stars [score]="score"></app-movie-stars>
+    <p class="dsmovie-score-count">{{count}} avaliações</p>
+</div>
