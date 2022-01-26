@@ -1,0 +1,28 @@
+<div class="dsmovie-form-container">
+    <img class="dsmovie-movie-card-image" src={{movie?.image}} alt={{movie?.title}} />
+    <div class="dsmovie-card-bottom-container">
+        <h3>{{movie?.title}}</h3>
+        <form [formGroup]="formGroup">
+            <div class="form-group dsmovie-form-group">
+                <label htmlFor="email">Informe seu email</label>
+                <input type="email" class="form-control" formControlName="email" id="email" />
+            </div>
+            <div class="form-group dsmovie-form-group">
+                <label htmlFor="score">Informe sua avaliação</label>
+                <select class="form-control" id="score"  formControlName="score">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="dsmovie-form-btn-container">
+                <button type="submit" [disabled]="!formGroup.valid" (click)="handleSubmit()" class="btn btn-primary dsmovie-btn">Salvar</button>
+            </div>
+        </form >
+            
+        <button routerLink="/" class="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+        
+    </div >
+</div >

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -14,6 +15,7 @@ import { MovieScoreComponent } from './components/movie-score/movie-score.compon
 import { MovieStarsComponent } from './components/movie-stars/movie-stars.component';
 import { StarComponent } from './components/star/star.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PaginationComponent } from './components/pagination/pagination.componen
   imports: [
     BrowserModule,
     HttpClientModule, 
-    AngularSvgIconModule.forRoot()
+    AngularSvgIconModule.forRoot(), AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
